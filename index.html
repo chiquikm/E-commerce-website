@@ -10,6 +10,9 @@
     <div class="grid-container">
         <header class="header">
           <div class="brand">
+              <button onclick="openMenu()">
+               &#9776;   
+              </button>
               <a href="index.html">chiquimk</a>
           </div>
           <div class="header-links">
@@ -17,8 +20,38 @@
           <a href="signin.html">Sign In</a>
           </div>
         </header>
-        <aside>
-            Shopping Categories
+        <aside class="sidebar">
+          <h3>Shopping Categories</h3>
+          <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+          <ul>
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+              
+              <li>
+                <a href="index.html">New Arrivals</a>
+            </li>
+
+            <li>
+                <a href="index.html">Footwear</a>
+            </li>
+
+            <li>
+                <a href="index.html">Clothing</a>
+            </li>
+
+            <li>
+                <a href="index.html">Accessories</a>
+            </li>
+
+            <li>
+                <a href="index.html">Blog</a>
+            </li>
+
+            <li>
+                <a href="index.html">Support</a>
+            </li>
+          </ul>
         </aside>
         <main class="main">
             <div class="content">
@@ -60,6 +93,14 @@
            All rights reserved. 
         </footer>
     </div>
+    <script>
+        function openMenu(){
+            document.querySelector(".sidebar").classList.addclass()
+        }
+        function closeMenu(){
+            document.querySelector(".sidebar").classList
+        }
+    </script>
 
 </body>
 
